@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIKOKU TRIP 2026 - Official Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --olive: #6B8E23;
+            --orange: #F28500;
+            --gold: #D4AF37;
+            --bg-cream: #FAF9F6;
+            --text-dark: #1a1a1a;
+            --placeholder-bg: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            padding: 80px 20px 40px;
+            text-align: center;
+            background: white;
+            position: relative;
+        }
+
+        .journal-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 3rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin: 0;
+            color: var(--text-dark);
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: var(--olive);
+            font-weight: 700;
+        }
+
+        /* 写真エリア */
+        .photo-container {
+            width: 100%;
+            height: 250px;
+            background-color: var(--placeholder-bg);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* インライン写真 */
+        .inline-photo-container {
+            width: 100%;
+            height: 200px;
+            background-color: var(--placeholder-bg);
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .inline-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* カウントダウン */
+        .countdown-hero {
+            background: linear-gradient(135deg, var(--orange), #ffae42);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(242, 133, 0, 0.3);
+        }
+
+        #countdown {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            display: block;
+            line-height: 1;
+        }
+
+        /* Container */
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 2rem;
+            margin: 60px 0 30px;
+            position: relative;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            border-left: 8px solid var(--olive);
+        }
+
+        .action-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 15px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* List */
+        .interactive-list {
+            background: white;
+            border-radius: 24px;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #eee;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .checked .checkbox {
+            background: var(--olive);
+            border-color: var(--olive);
+            position: relative;
+        }
+
+        .checked .checkbox::after {
+            content: '✓';
+            color: white;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+        }
+
+        .checked span { color: #ccc; text-decoration: line-through; }
+
+        /* Anniversary */
+        .anniversary-section {
+            margin-top: 80px;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #FAF9F6, #fff0f0);
+            text-align: center;
+            border-radius: 60px 60px 0 0;
+        }
+
+        #days-count {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--text-dark);
+            display: block;
+        }
+
+        footer {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="subtitle">Spring Collection 2026</p>
+    <h1 class="journal-title">SHIKOKU<br>HOLIDAY</h1>
+</header>
+
+<div class="photo-container">
+    <img src="kagawa01.jpg" alt="Kagawa Vue">
+</div>
+
+<div class="countdown-hero">
+    <span id="countdown">--:--:--</span>
+    <span style="font-size:0.8rem; font-weight:700; opacity:0.8;">UNTIL ADVENTURE BEGINS</span>
+</div>
+
+<div class="container">
+    <h2>The Itinerary</h2>
+    
+    <div class="card">
+        <span style="color:var(--orange); font-weight:700;">DAY 1-2 | Kagawa</span>
+        <h3 style="margin:10px 0;">うどん巡りと金刀比羅宮</h3>
+        <p>11:20 成田発。まずは一鶴で骨付鳥、そのあとは金刀比羅宮の階段に挑戦！</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=KANEMITSU+CAPITAL+HOTEL" class="action-link" target="_blank">📍 Hotel</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=ガッツレンタカー高松片原町店" class="action-link" target="_blank">🚗 Rental Car</a>
+    </div>
+
+    <div class="inline-photo-container">
+        <img src="ehime01.jpg" alt="Ehime Vue">
+    </div>
+
+    <div class="card" style="border-left-color: var(--orange);">
+        <span style="color:var(--olive); font-weight:700;">DAY 3-4 | Ehime</span>
+        <h3 style="margin:10px 0;">道後温泉と松山城</h3>
+        <p>温泉で癒やされ、松山城のパノラマビューを堪能。歴史と文化に触れる贅沢な時間。</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=コンフォートホテル松山" class="action-link" target="_blank">📍 Hotel</a>
+    </div>
+
+    <h2>Quest List</h2>
+    <div class="interactive-list">
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>一鶴 丸亀本店で骨付鳥を食べる</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>金刀比羅宮の階段を登りきる</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>四国水族館のイルカに癒やされる</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>道後温泉本館の前で記念撮影</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>松山城で絶景を眺める</span></div>
+    </div>
+
+    <h2>Packing List</h2>
+    <div class="interactive-list">
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>サングラス</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>モバイルバッテリー（必須！）</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>折りたたみ傘（備えあれば）</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>常備薬（胃薬など）</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>スキンケア・日焼け止め</span></div>
+        <div class="list-item" onclick="toggle(this)"><div class="checkbox"></div><span>楽しむ気持ち（忘れない！）</span></div>
+    </div>
+</div>
+
+<div class="anniversary-section">
+    <p style="color: #d63384; font-weight: 700; letter-spacing: 0.1em;">Celebrating Our History</p>
+    <span id="days-count">0</span>
+    <p style="font-size: 1.2rem; color: #888; font-weight: 700;">DAYS TOGETHER</p>
+    <div style="margin-top:30px; font-style: italic; color: #d63384; opacity: 0.6;">Since April 2022</div>
+</div>
+
+<footer>
+    © 2026 PRODUCED BY YUDAI
+</footer>
+
+<script>
+    // カウントダウン
+    const tripStart = new Date("2026-05-02T11:20:00").getTime();
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = tripStart - now;
+        if (diff < 0) { document.getElementById("countdown").innerText = "Enjoy!"; return; }
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("countdown").innerText = `${d}d ${h}h ${m}m`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 記念日カウンター
+    const start = new Date("2022-04-01");
+    const today = new Date();
+    const days = Math.floor((today - start) / (1000 * 60 * 60 * 24));
+    let count = 0;
+    const counterElement = document.getElementById("days-count");
+    const interval = setInterval(() => {
+        if (count >= days) { counterElement.innerText = days; clearInterval(interval); }
+        else { count += Math.ceil(days / 60); if (count > days) count = days; counterElement.innerText = count; }
+    }, 25);
+
+    function toggle(el) { el.classList.toggle('checked'); }
+</script>
+
+</body>
+</html>
